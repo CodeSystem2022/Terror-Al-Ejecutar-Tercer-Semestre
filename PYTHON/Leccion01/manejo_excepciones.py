@@ -1,10 +1,10 @@
 from NumerosIgualesException import NumerosIgualesException
 
-resultado = None
+resultado = None # indica qu la variable no tiene ningun valor
 
 
 try:
-    a = int(input(f'Digite un primer numero: '))
+    a = int(input(f'Digite un primer numero: ')) # las variales tamb se pueden crear dentro de bloques
     b = int(input(f'Digite un segundo numero: '))
     if a == b:
         raise NumerosIgualesException('Son numeros iguales')
