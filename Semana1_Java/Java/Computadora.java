@@ -1,8 +1,4 @@
-//Iván De La Fuente
 package ar.com.system2023.mundopc;
-
-public class Computadora {
-    package ar.com.system2023.mundopc;
 
 public class Computadora {
     private final int idComputadora;
@@ -11,12 +7,13 @@ public class Computadora {
     private Teclado teclado;
     private Raton raton;
     private static int contadorComputadoras;
-    
+
     //Constructor vacio
+
     private Computadora(){
-        this.idComputadora = ++Computadora.contadorComputadoras;
-    }
-    
+        this.idComputadora = ++ contadorComputadoras;
+    };
+
     //Constructor 2
     public Computadora(String nombre, Monitor monitor, Teclado teclado, Raton raton){
         this();
@@ -24,13 +21,12 @@ public class Computadora {
         this.monitor = monitor;
         this.teclado = teclado;
         this.raton = raton;
-        
-    }
-    
-    public int getIdComputadora(){
-        return idComputadora;
     }
 
+
+    public int getIdComputadora(){
+        return this.idComputadora;
+    }
     public String getNombre() {
         return nombre;
     }
@@ -65,14 +61,13 @@ public class Computadora {
 
     @Override
     public String toString() {
-        return "Computadora{" + "idComputadora=" + idComputadora 
-                + ", nombre=" + nombre 
-                + ", monitor=" + monitor 
-                + ", teclado=" + teclado 
-                + ", raton=" + raton + '}';
+        final StringBuilder sb = new StringBuilder("Computadora{");
+        sb.append("idComputadora=").append(idComputadora);
+        sb.append(", nombre='").append(nombre).append('\'');
+        sb.append(", monitor=").append(monitor);
+        sb.append(", teclado=").append(teclado);
+        sb.append(", raton=").append(raton);
+        sb.append('}');
+        return sb.toString();
     }
-    
 }
-
-}
-//Iván De La Fuente
