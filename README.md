@@ -3,7 +3,7 @@
 
 ### Terror al Ejecutar - Asistencia del Tercer Semestre.
 
-#### Integrantes:
+### Integrantes:
 
 - Iván de la Fuente
 - Ramiro Michat
