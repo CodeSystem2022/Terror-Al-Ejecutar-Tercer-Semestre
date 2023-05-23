@@ -9,4 +9,4 @@ x crea un archivo
 t es para texto o text, 
 b archivos binarios
 w+ lee y escribe,
-r+ lee y escribe la r y w son iguales
+r+ lee y escribe la r y w son iguales.
