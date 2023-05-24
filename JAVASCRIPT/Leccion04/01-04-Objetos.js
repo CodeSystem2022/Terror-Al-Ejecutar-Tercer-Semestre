@@ -1,5 +1,5 @@
 
-//DIFERENTES FORMAS DE CREAR OBJETS
+//DIFERENTES FORMAS DE CREAR OBJETOS
 //caso numero 1
 let miObjeto = new Object(); //esta es una opcion formal
 
