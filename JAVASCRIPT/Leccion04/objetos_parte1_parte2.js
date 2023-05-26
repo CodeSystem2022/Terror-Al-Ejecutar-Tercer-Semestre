@@ -14,8 +14,3 @@ console.log(persona.apellido);
 console.log(persona.email);
 console.log(persona.edad); 
 console.log(persona); 
-
-
-persona.apellida = 'Salame'; //Cambiamos dinamicamente un valor del objeto
-delete persona.apellida //eliminamos el error
-console.log(persona)
