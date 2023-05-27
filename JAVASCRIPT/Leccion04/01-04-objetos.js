@@ -1,24 +1,39 @@
-console.log(['apellido']); //Accedemos como si fuera un arreglo
 
-//for in y accedemos al objeto como si fuera un arreglo
-for(propiedad in persona){
-    console.log(propiedad);
-    console.log(propiedad[propiedad]);
-}
+//DIFERENTES FORMAS DE CREAR OBJETOS
+//caso numero 1
+let miObjeto = new Object(); //esta es una opcion formal
 
-//Uso de call
-let persona4 = {
-    nombre: 'Juan',
-    apellido: 'Perez',
-    nombreCompleto2: function(titulo, telefono){
-        return titulo+': '+this.nombre+' '+this.apellido+' '+telefono;
-    }
-}
+//caso numero 2
+let miObjeto2 = {}; //esta opcion es breve y recomendada
 
-let persona5 = {
-    nombre: 'Carlos',
-    apellido: 'Lara'
-}
+//caso numero 3 (String)
+let miCadena1 = new String('Ejemplo'); //Sintaxis formal
 
-console.log(persona4.nombreCompleto2('Lic.', '5492618484845'));
-console.log(persona4.nombreCompleto2.call(persona5, 'Ing.', '5492618585856'));
+//caso numero 4 (String 2)
+let miCadena2 = 'Hola'; //Estaes la sintaxis simplificada y recomendada
+
+//caso numero 5 (numeros 1)
+let miNumero = new Number(1); //es formal (no recomendada)
+
+//caso numero 6 (numeros 2)
+let miNumero2 = 1; //Sintaxis recomendada
+
+//caso numero 7 (boolean 1)
+let miBoolean1 = new Boolean(false); //formal
+
+//caso numero 8 (boolean2)
+let miBoolean2 = false; //sintaxis recomendada
+
+//caso numero 9 (arreglos 1)
+let miArrgelo = new Array(); //Formal
+
+//caso numero 10 (arreglos 2)
+let miArreglo2 = [0]; //Sintaxis recomendada
+
+
+//caso numero 11 (Funciones 1)
+let miFuncion1 = new function(){}; //Todo despues de new es considerado objeto
+
+//caso numero 12 (Funciones 2)
+let miFuncion2 = function(){}; //Notacion simplificada y recomendada
+
