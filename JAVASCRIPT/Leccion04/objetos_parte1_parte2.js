@@ -16,6 +16,6 @@ console.log(persona.edad);
 console.log(persona); 
 
 
-persona.apellida = 'Salame'; //Cambiamos dinamicamente un valor del objeto
-delete persona.apellida //eliminamos el error
+persona.apellido = 'Salame'; //Cambiamos dinamicamente un valor del objeto
+delete persona.apellido //eliminamos el error
 console.log(persona)
