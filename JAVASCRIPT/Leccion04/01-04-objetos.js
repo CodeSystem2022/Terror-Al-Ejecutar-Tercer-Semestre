@@ -1,39 +1,64 @@
+// ===============CLASE 04 - LUNES-24/04/2023===============
 
-//DIFERENTES FORMAS DE CREAR OBJETOS
-//caso numero 1
-let miObjeto = new Object(); //esta es una opcion formal
+let x = 10; //variable de tipo primitiva
+console.log(x.length);
+console.log('Tipos primitivos');
+//Objeto
+let persona = {
+    nombre: 'Carlos',
+    apellido: 'Gil',
+    email: 'cgil@email.com',
+    edad: 30,
+    nombreCompleto: function(){ // método o función en JavaScript
+        return this.nombre + ' ' + this.apellido;
+    }
+}
 
-//caso numero 2
-let miObjeto2 = {}; //esta opcion es breve y recomendada
+console.log(persona.nombre);
+console.log(persona.apellido);
+console.log(persona.email);
+console.log(persona.edad);
+console.log(persona);
+console.log(persona.nombreCompleto())
 
-//caso numero 3 (String)
-let miCadena1 = new String('Ejemplo'); //Sintaxis formal
+console.log('Ejecutando con un objeto');
+let persona2 = new Object(); // Debe crear un nuevo objeto en memoria
+persona2.nombre = 'Juan';
+persona2.direccion = 'Salada 14';
+persona2.telefono = '5492618282821';
 
-//caso numero 4 (String 2)
-let miCadena2 = 'Hola'; //Estaes la sintaxis simplificada y recomendada
+console.log('Creamos un nuevo objeto');;
+console.log(persona2.telefono);
+console.log(persona['apellido']); // Accedemos como si fuera un arreglo
 
-//caso numero 5 (numeros 1)
-let miNumero = new Number(1); //es formal (no recomendada)
+console.log('Usamos el ciclo for in');
+for(propiedad in persona){ //for in y accedemos al objeto como si fuera un arreglo
+    console.log(propiedad);
+    console.log(persona[propiedad]);
+}
 
-//caso numero 6 (numeros 2)
-let miNumero2 = 1; //Sintaxis recomendada
+console.log('Cambiamos y eliminamos un error');
+persona.apellida = 'Betancud'; // Cambiamos dinámicamente un valor del objeto
+delete persona.apellida; // Eliminamos el error
+console.log(persona);
 
-//caso numero 7 (boolean 1)
-let miBoolean1 = new Boolean(false); //formal
+//Distintas formas de imprimir un objeto
+//Número 1: la más sencilla concatenar cada valor de cada propiedad
+console.log('Distintas formas de imprimir un objeto: forma 1');
+console.log(persona.nombre + ', ' + persona.apellido);
 
-//caso numero 8 (boolean2)
-let miBoolean2 = false; //sintaxis recomendada
+//Número 2: A través del ciclo for in
+console.log('Distintas formas de imprimir un objeto: forma 2');
+for(nombrePropiedad in persona){
+    console.log(persona[nombrePropiedad]);
+}
 
-//caso numero 9 (arreglos 1)
-let miArrgelo = new Array(); //Formal
+//Número 3: La función Object.values()
+console.log('Distintas formas de imprimir un objeto: forma 3');
+let personaArray = Object.values(persona);
+console.log(personaArray);
 
-//caso numero 10 (arreglos 2)
-let miArreglo2 = [0]; //Sintaxis recomendada
-
-
-//caso numero 11 (Funciones 1)
-let miFuncion1 = new function(){}; //Todo despues de new es considerado objeto
-
-//caso numero 12 (Funciones 2)
-let miFuncion2 = function(){}; //Notacion simplificada y recomendada
-
+//Número 4: Utilizaremos el método JSON.stringify
+console.log('Distintas formas de imprimir un objeto: forma 4');
+let personaString = JSON.stringify(persona);
+console.log(personaString);
