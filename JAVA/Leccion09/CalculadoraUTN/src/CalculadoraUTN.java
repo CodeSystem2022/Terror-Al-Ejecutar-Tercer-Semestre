@@ -4,15 +4,7 @@ public class CalculadoraUTN {
         Scanner entrada = new Scanner(System.in);
         while (true){ //Ciclo infinito
             System.out.println("******* Aplicacion Calculadora *******");
-            //Mostramos el menú
-            System.out.println("""
-                    1. Suma
-                    2. Resta
-                    3. Multiplicacion
-                    4. Division
-                    5. Salir
-                    """);
-            System.out.println("Operacion a realizar? ");
+            mostrarMenu();
 
             try {
                 var operacion = Integer.parseInt(entrada.nextLine());
@@ -56,5 +48,18 @@ public class CalculadoraUTN {
             }
         } //Fin while
     } //Fin main
+
+    private static void mostrarMenu(){
+        //Mostramos el menú
+        System.out.println("""
+                    1. Suma
+                    2. Resta
+                    3. Multiplicacion
+                    4. Division
+                    5. Salir
+                    """);
+        System.out.println("Operacion a realizar? ");
+
+    }
 } //Fin clase
 
