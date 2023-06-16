@@ -1,11 +1,11 @@
-class orden{
+class Orden{
     static contadorOdenes = 0;
     static getMAX_PRODUCTOS(){
         return 5;
     }
 
     constructor(){
-        this._idOrden = ++orden.contadorOdenes;
+        this._idOrden = ++Orden.contadorOdenes;
         this._productos = [];
         this._contadorProductosAgregados = 0;
     }
@@ -15,7 +15,7 @@ class orden{
     }
 
     agregarProductos(){
-        if(this._productos.length < orden.getMAX_PRODUCTOS()){
+        if(this._productos.length < Orden.getMAX_PRODUCTOS()){
             this._productos.push(producto); //Tenemos 2 tipos de sintaxis: 1
             //this._productos[this._contadorProductosAgregados++] = producto; //segunda sintaxis
         }
