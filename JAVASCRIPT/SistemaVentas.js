@@ -22,5 +22,5 @@ class Orden{
         else{
             console.log('No se pueden agregar mas productos');
         }
-    }//Fin del método agregarProducto
-}//Fin de la clase Orden
+    }//Fin del método agregarProducto.
+}//Fin de la clase Orden.
