@@ -1,4 +1,4 @@
-#6.3 Manejo de transacciones con with - Python (SEMANA 6)
+# 6.3 Manejo de transacciones con with - Python (SEMANA 6)
 
 import psycopg2 as bd # Es para poder conectarnos a Postgre
 
