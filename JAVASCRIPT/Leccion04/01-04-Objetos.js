@@ -62,3 +62,10 @@ console.log(personaArray);
 console.log('Distintas formas de imprimir un objeto: forma 4');
 let personaString = JSON.stringify(persona);
 console.log(personaString);
+
+// Uso de prototype
+Persona3.prototype.telefono = '23415612';
+console.log(padre);
+console.log(madre.telefono);
+madre.telefono = '2385588556555';
+console.log(madre.telefono);
