@@ -30,6 +30,12 @@ class Producto{
     }
 }//Fin de la clase Producto
 
+
+let producto1 = new Producto('Pantalon', 200);
+let producto2 = new Producto('Camisa', 100);
+console.log(producto1.toString());
+console.log(producto2.toString());
+
 class Orden{
     static contadorOrdenes = 0;
     static get_MAX_PRODUCTOS(){
@@ -72,8 +78,7 @@ class Orden{
 
 } //Fin de la clase Orden
 
-let producto1 = new Producto('Pantalon', 200);
-let producto2 = new Producto('Camisa', 100);
+
 let producto3 = new Producto('Cinturon', 50);
 let orden1 = new Orden();
 let orden2 = new Orden();
