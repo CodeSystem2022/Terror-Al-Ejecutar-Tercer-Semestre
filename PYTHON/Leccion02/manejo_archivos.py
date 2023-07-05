@@ -1,3 +1,4 @@
+
 # Declaramos una variable
 
 try:
@@ -11,3 +12,4 @@ except Exception as e:
 finally:  # siempre se ejecuta
     archivo.close()  # con esto se debe cerrar el archivo
 #archivo.write('Todo quedo perfecto'): este es un error
+
