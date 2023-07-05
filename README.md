@@ -13,5 +13,5 @@
 5- Facundo Palomo
 6- Jorge Rojas
 7- Vanesa Moreno
-8- Germán Avalos
+8- Germán Abalos
 9- Walter Díaz

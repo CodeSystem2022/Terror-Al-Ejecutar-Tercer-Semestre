@@ -18,4 +18,6 @@ console.log(persona);
 
 persona.apellido = 'Salame'; //Cambiamos dinamicamente un valor del objeto
 delete persona.apellido //eliminamos el error
+
 console.log(persona)
+
