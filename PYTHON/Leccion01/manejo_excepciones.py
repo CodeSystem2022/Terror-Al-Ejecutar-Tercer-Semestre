@@ -4,11 +4,17 @@ resultado = None
 a = 7
 b = 0
 try:
-    a = int(input(f'Digite un primer numero: '))
-    b = int(input(f'Digite un segundo numero: '))
+   #Si creamos variables dentro del bloque try estas seran exclusivas del bloque
+    a = int(input("Ingrese un numero: "))
+    b = int(input("Ingrese otro numero"))#En caso de ingresar un valor erroneo
+    #al tipo de dato de entrada que especificamos, exception captara el error
     if a == b:
-        raise NumerosIgualesException('Son números iguales')
-    resultado = a / b # Modificamos
+
+        raise NumerosIgualesException('Son numeros iguales')
+        #la palabra recervada raise nos permite arrojar una excepcion
+        #A travez de ella accedemos a la exccepcion
+    resultado = a/b # modificamos
+
 except TypeError as e:
     print(f'TypeError - Ocurrió un error: {type(e)}')
 except ZeroDivisionError as e:
