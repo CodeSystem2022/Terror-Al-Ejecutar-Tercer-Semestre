@@ -1,14 +1,20 @@
 import java.util.Scanner;
+
+
 public class CalculadoraUTN {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        while (true){ //Ciclo infinito
-            System.out.println("******* Aplicacion Calculadora *******");
+        while (true){ // Ciclo infinito, solo se finaliza con un break.
+
+
+            System.out.println("******* Aplicación Calculadora *******");
+
             mostrarMenu();
 
             try {
                 var operacion = Integer.parseInt(entrada.nextLine());
                 if (operacion >= 1 && operacion <= 4) {
+
                     System.out.print("Digite el valor para el operando1: ");
                     var operando1 = Integer.parseInt(entrada.nextLine());
                     System.out.print("Digite el valor para el operando2: ");
@@ -62,4 +68,3 @@ public class CalculadoraUTN {
 
     }
 } //Fin clase
-
