@@ -1,5 +1,6 @@
 package UTN.datos;
 
+
 import UTN.dominio.Estudiante;
 import static UTN.conexion.Conexion.getConnection;
 import java.sql.Connection;
@@ -106,9 +107,11 @@ public class EstudianteDAO {
 
     }
 
+
     public static void main(String[] args) {
         //Listar los estudiantes
         var estudianteDao = new EstudianteDAO();
+
         System.out.println("Listado de estrudiantes: ");
         List<Estudiante> estudiantes = estudianteDao.listarEstudiantes();
         estudiantes.forEach(System.out::println);//Función lambda para imprimir

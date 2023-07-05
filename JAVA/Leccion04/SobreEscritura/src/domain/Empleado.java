@@ -1,16 +1,19 @@
 package domain;
 
 public class Empleado {
+    
     protected String nombre;
     protected double sueldo;
     
-    public Empleado(String nombre, double sueldo){
+    public Empleado(String nombre, double sueldo) {
         this.nombre = nombre;
         this.sueldo = sueldo;
-    }
+    }   
     
+    
+    //METODO PARA LA SOBREESCRITURA
     public String obtenerDetalles(){
-        return "Nombre: "+this.nombre+", Sueldo: "+this.sueldo;
+        return "Nombre: " + this.nombre+", Sueldo: "+this.sueldo;
     }
 
     public String getNombre() {

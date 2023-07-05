@@ -4,9 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>UTN</groupId>
-    <artifactId>estudiante</artifactId>
+
+    <groupId>UTN</groupId><!-- Aqui va la carpeta donde va todo el codigo del programa java en este caso-->
+    <artifactId>estudiante</artifactId> <!-- -->
     <version>1.0-SNAPSHOT</version>
+    <!-- creamos una apartado de dependecias y ponemos cada dependencia en su apartado dependency-->
+    <!-- Luego de agregar dependencias debemos sincronizarlas, actualizandolo, para que no de errores -->
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
@@ -15,6 +18,7 @@
             <artifactId>mysql-connector-j</artifactId>
             <version>8.0.33</version>
         </dependency>
+      
     </dependencies>
 
     <properties>

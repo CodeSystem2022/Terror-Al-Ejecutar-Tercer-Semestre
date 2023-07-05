@@ -5,14 +5,18 @@ public class Persona {
     private String email;
     private static int numeroPersonas = 0;
 
-    //Constructor vacio para id
+
+
+    // Constructor vacio para id.
     public Persona(){
         this.id = ++Persona.numeroPersonas;
     }
 
-    //Constructor con parámetros(sobrecarga de constructores es cuando hay más de uno)
+    // Constructor con parámetros (sobrecarga de constructores es cuando hay más de uno).
     public Persona(String nombre, String tel, String email){
-        this();//llamamos al constructor vacio, esto se hace automáticamente
+        this(); // Llamamos al constructor vacio, esto se hace automáticamente.
+
+
         this.nombre = nombre;
         this.tel = tel;
         this.email = email;
@@ -50,7 +54,9 @@ public class Persona {
         this.email = email;
     }
 
-    @Override//Método que viene de la clase padre Object
+
+    @Override // Método que viene de la clase padre Object.
+
     public String toString() {
         return "Persona{" +
                 "id=" + id +
@@ -66,7 +72,6 @@ public class Persona {
     }
 
 }
-
 
 
 
