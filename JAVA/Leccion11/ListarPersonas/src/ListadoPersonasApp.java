@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class ListadoPersonasApp {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
+
         // Definimos la lista fuera del ciclo while
         List <Persona> personas = new ArrayList<>(); // Array vacio.
         // Empezamos con el menú.
@@ -22,6 +23,7 @@ public class ListadoPersonasApp {
 
     private static void mostrarMenu(){ // Método static como el main y vacio (void).
         // Mostramos las opciones.
+
         System.out.print("""
                 ******* Listado de Personas *******
                 1. Agregar
@@ -29,6 +31,7 @@ public class ListadoPersonasApp {
                 3. Salir
                 """);
         System.out.print("Digite una de las opciones: ");
+
     } // Fin del método mostrar menú.
 
     // Función o método ↓
@@ -66,3 +69,4 @@ public class ListadoPersonasApp {
         return salir; // La variable que tiene el poder de sacarnos del ciclo while.
     } // Fin del método ejecutarOperacion.
 } // Fin de la clase ListadoPersonasApp.
+

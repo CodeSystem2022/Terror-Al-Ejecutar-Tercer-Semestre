@@ -62,3 +62,29 @@ console.log(personaArray);
 console.log('Distintas formas de imprimir un objeto: forma 4');
 let personaString = JSON.stringify(persona);
 console.log(personaString);
+
+console.log('Comenzamos a utilizar el método get.');
+console.log(persona.nombreEdad);
+
+console.log('Comenzamos con el método get y set para idiomas.');
+persona.lang = 'en';
+console.log(persona.lang);
+
+function persona3(nombre, apellido, email){//constructor o metodo construto, funcion constructorr
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.email = email;
+    this.nombreCompleto = function(){//metodo dentro del constructor
+        return this.nombre+' '+this.apellido;
+    }
+}
+let padre = new persona3('Leonardo', 'Messi', 'mejordelmundo@gmali.com');
+padre.nombre = 'Lionel'//modificamos el nombre
+padre.telefono = '5492061154356';//una propiedad exclusiva del objeto padre
+console.log(padre);
+console.log(padre.nombreCompleto());//utilizamos la función
+
+let madre = new persona3('Laura', 'Contrera', 'lcontrera@gmail.com');
+console.log(madre);
+console.log(madre.telefono);//undefined, la propiedad no está definida
+console.log(madre.nombreCompleto())
