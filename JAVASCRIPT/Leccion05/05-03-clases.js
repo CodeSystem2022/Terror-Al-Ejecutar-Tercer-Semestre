@@ -1,3 +1,4 @@
+
 //EJEMPLO DE LA NO EXISTENCIA DE HOISTING EN TRABAJO DE CLASES
 //let persona3 = new Persona('Carla', 'Ponce'); //da error
 
@@ -88,11 +89,13 @@ class Persona {
 
     get nombre(){ //utilizamos el nombre sin el guion, es la idea de haber puesto un guin al atributo
         return this._nombre;
+
     }
 
     get apellido(){
         return this._apellido;
     }
+
 
 
     //METODO SET
@@ -101,10 +104,10 @@ class Persona {
         this._nombre = nombre;
     }
 
-
     set apellido(apellido){
         this._apellido = apellido;
     }
+
 
 
     //cabe destacar que no es necesario agregar ninguna coma entre metodo y metodo
@@ -150,6 +153,7 @@ class Persona {
         console.log('Saludos desde este método static');
     }
 
+
     //UN METODO STATIC PUEDE PASAR COMO ARGUMENTO UN OBJETO
     //para demostrarlo crearemos otro metodo static
     //de llamar desde una clase hija  y de tener que mostrear otrov alor en la previsualizacion de quocka
@@ -161,9 +165,6 @@ class Persona {
     }
 
 }
-
-
-
 
 
 
@@ -423,3 +424,4 @@ let persona4 = new Persona('Franco', 'Diaz');
 console.log(persona4.toString());
 let persona5 = new Persona('Liliana', 'Paz');
 console.log(persona5.toString()); //no habra definido un id ya que sueramos el maximo (se puede mejorar para evitar poner nombre y apellido)
+
